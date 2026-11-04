@@ -1,0 +1,24 @@
+@startuml
+left to right direction
+actor Пользователь
+rectangle FitDiary {
+  usecase "Настроить профиль и цель" as P
+  usecase "Записать питание и КБЖУ" as M
+  usecase "Записать тренировку" as W
+  usecase "Просмотреть день и шкалу" as D
+  usecase "Рассчитать статистику за период" as S
+  usecase "Удалить запись" as R
+  usecase "Сохранить резервную копию" as B
+  usecase "Проверить ввод" as V
+}
+Пользователь --> P
+Пользователь --> M
+Пользователь --> W
+Пользователь --> D
+Пользователь --> S
+Пользователь --> R
+Пользователь --> B
+M ..> V : <<include>>
+W ..> V : <<include>>
+P ..> V : <<include>>
+@enduml

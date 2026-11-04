@@ -1,0 +1,19 @@
+[project]
+name = "fitdiary-practice"
+version = "1.0.0"
+description = "Учебный фитнес-трекер — вариант 9"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.ruff]
+line-length = 180
+
+[tool.coverage.run]
+source = ["fitdiary"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 70
+
+[tool.coverage.html]
+directory = "evidence/coverage_html"

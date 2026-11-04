@@ -1,0 +1,12 @@
+.venv/
+.ruff_cache/
+__pycache__/
+*.pyc
+.coverage
+build/
+*.spec
+.work/
+*.tmp
+demo-data/
+dist/
+*.zip

@@ -1,0 +1,61 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Profile {
+  name: str
+  weight: float
+  height: float
+  calorie_goal: float
+  bmi: float
+}
+class Food {
+  name: str
+  kcal: float
+  protein: float
+  fat: float
+  carbs: float
+}
+class MealEntry {
+  grams: float
+  date: str
+  id: str
+  nutrients: tuple
+}
+class Workout {
+  name: str
+  minutes: float
+  kcal: float
+  date: str
+}
+class DiaryState
+interface Repository {
+  load(): DiaryState
+  save(state): None
+}
+class JsonRepository
+class FitnessService {
+  add_meal(entry)
+  add_workout(entry)
+  update_profile(profile)
+  remove(id)
+  statistics(start, end, snapshot)
+}
+class FitnessApp
+class EventBus
+interface AggregationStrategy
+class DailyTotals
+class EntryFactory
+DiaryState "1" *-- "1" Profile
+DiaryState "1" o-- "0..*" MealEntry
+DiaryState "1" o-- "0..*" Workout
+MealEntry "0..*" --> "1" Food
+JsonRepository ..|> Repository
+FitnessService --> Repository
+FitnessService --> DiaryState
+FitnessService --> EventBus
+FitnessService --> AggregationStrategy
+DailyTotals ..|> AggregationStrategy
+FitnessApp --> FitnessService
+FitnessApp ..> EntryFactory
+EntryFactory ..> MealEntry
+EntryFactory ..> Workout
+@enduml

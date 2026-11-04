@@ -1,0 +1,18 @@
+         100375 function calls in 0.024 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.024    0.024 benchmark.py:47(<lambda>)
+        1    0.006    0.006    0.024    0.024 services.py:57(calculate)
+    10000    0.007    0.000    0.017    0.000 domain.py:97(nutrients)
+    50000    0.007    0.000    0.010    0.000 domain.py:100(<genexpr>)
+    40000    0.003    0.000    0.003    0.000 {built-in method builtins.getattr}
+      365    0.000    0.000    0.000    0.000 services.py:62(<lambda>)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        2    0.000    0.000    0.000    0.000 domain.py:37(day)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.sorted}
+        2    0.000    0.000    0.000    0.000 {method 'isoformat' of 'datetime.date' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method fromisoformat}
+
+

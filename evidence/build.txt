@@ -1,0 +1,72 @@
+291 INFO: PyInstaller: 6.22.3, contrib hooks: 2026.9
+291 INFO: Python: 3.13.1
+305 INFO: Platform: Windows-11-10.0.26300-SP0
+306 INFO: Python environment: C:\Users\��\OneDrive\Desktop\���������� �������\.venv
+306 INFO: wrote .work\FitDiary.spec
+324 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\��\\OneDrive\\Desktop\\���������� �������',
+ 'C:\\Users\\��\\AppData\\Local\\Programs\\Python\\Python313\\python313.zip',
+ 'C:\\Users\\��\\AppData\\Local\\Programs\\Python\\Python313\\DLLs',
+ 'C:\\Users\\��\\AppData\\Local\\Programs\\Python\\Python313\\Lib',
+ 'C:\\Users\\��\\AppData\\Local\\Programs\\Python\\Python313',
+ 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������\\.venv',
+ 'C:\\Users\\��\\OneDrive\\Desktop\\���������� '
+ '�������\\.venv\\Lib\\site-packages',
+ 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������']
+914 INFO: checking Analysis
+956 INFO: Building because C:\Users\��\OneDrive\Desktop\���������� �������\fitdiary\gui.py changed
+956 INFO: Looking for Python shared library...
+956 INFO: Using Python shared library: C:\Users\��\AppData\Local\Programs\Python\Python313\python313.dll
+956 INFO: Running Analysis Analysis-00.toc
+956 INFO: Target bytecode optimization level: 0
+956 INFO: Initializing module dependency graph...
+959 INFO: Initializing module graph hook caches...
+976 INFO: Analyzing modules for base_library.zip ...
+3052 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+3750 INFO: Processing standard module hook 'hook-math.py' from 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+4853 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+5815 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+6219 INFO: Caching module dependency graph...
+6250 INFO: Analyzing C:\Users\��\OneDrive\Desktop\���������� �������\run.py
+6254 INFO: Processing pre-find-module-path hook 'hook-tkinter.py' from 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+6258 INFO: TclTkInfo: initializing cached Tcl/Tk info...
+6666 INFO: Processing standard module hook 'hook-_tkinter.py' from 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+6733 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+6755 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+6868 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+7033 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+7487 INFO: Processing module hooks (post-graph stage)...
+7722 INFO: Processing standard module hook 'hook-_tkinter.py' from 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+7733 INFO: Performing binary vs. data reclassification (927 entries)
+7952 INFO: Looking for ctypes DLLs
+7969 INFO: Analyzing run-time hooks ...
+7970 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+7973 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+7976 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+7978 INFO: Including run-time hook 'pyi_rth__tkinter.py' from 'C:\\Users\\��\\OneDrive\\Desktop\\���������� �������\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+7998 INFO: Creating base_library.zip...
+8016 INFO: Looking for dynamic libraries
+8293 INFO: Extra DLL search directories (AddDllDirectory): []
+8293 INFO: Extra DLL search directories (PATH): []
+8906 INFO: Warnings written to C:\Users\��\OneDrive\Desktop\���������� �������\.work\build\FitDiary\warn-FitDiary.txt
+8923 INFO: Graph cross-reference written to C:\Users\��\OneDrive\Desktop\���������� �������\.work\build\FitDiary\xref-FitDiary.html
+8957 INFO: checking PYZ
+8980 INFO: Building because C:\Users\��\OneDrive\Desktop\���������� �������\fitdiary\gui.py changed
+8980 INFO: Building PYZ (ZlibArchive) C:\Users\��\OneDrive\Desktop\���������� �������\.work\build\FitDiary\PYZ-00.pyz
+9176 INFO: Building PYZ (ZlibArchive) C:\Users\��\OneDrive\Desktop\���������� �������\.work\build\FitDiary\PYZ-00.pyz completed successfully.
+9203 INFO: checking PKG
+9234 INFO: Building because toc changed
+9234 INFO: Building PKG (CArchive) FitDiary.pkg
+12111 INFO: Building PKG (CArchive) FitDiary.pkg completed successfully.
+12129 INFO: Bootloader C:\Users\��\OneDrive\Desktop\���������� �������\.venv\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+12129 INFO: checking EXE
+12159 INFO: Building because toc changed
+12159 INFO: Building EXE from EXE-00.toc
+12162 INFO: Copying bootloader EXE to C:\Users\��\OneDrive\Desktop\���������� �������\release\FitDiary.exe
+12226 INFO: Copying icon to EXE
+12291 INFO: Copying 0 resources to EXE
+12291 INFO: Embedding manifest in EXE
+12352 INFO: Appending PKG archive to EXE
+12618 INFO: Fixing EXE headers
+13109 INFO: Building EXE from EXE-00.toc completed successfully.
+13127 INFO: Build complete! The results are available in: C:\Users\��\OneDrive\Desktop\���������� �������\release

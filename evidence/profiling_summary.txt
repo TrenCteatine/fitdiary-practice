@@ -1,0 +1,66 @@
+{
+  "environment": "Windows-11-10.0.26300-SP0",
+  "python": "3.13.1",
+  "rows": [
+    {
+      "meals": 1000,
+      "workouts": 100,
+      "median_seconds": 0.0013716999965254217,
+      "save_seconds": 0.02401850000023842,
+      "load_seconds": 0.018852299981517717,
+      "json_bytes": 284774
+    },
+    {
+      "meals": 10000,
+      "workouts": 1000,
+      "median_seconds": 0.010697299992898479,
+      "save_seconds": 0.20529260000330396,
+      "load_seconds": 0.10143690000404604,
+      "json_bytes": 2856974
+    },
+    {
+      "meals": 50000,
+      "workouts": 5000,
+      "median_seconds": 0.0533288000151515,
+      "save_seconds": 0.9475108000042383,
+      "load_seconds": 0.4970775000110734,
+      "json_bytes": 14332974
+    }
+  ],
+  "comparison": {
+    "naive_seconds": 0.09550189998117276,
+    "optimized_seconds": 0.010475799994310364,
+    "speedup": 9.116430251917937,
+    "equal_results": true
+  },
+  "memory": {
+    "before_bytes": 0,
+    "after_bytes": 0,
+    "growth_bytes": 0,
+    "peak_bytes": 359262,
+    "iterations": 10
+  },
+  "ui_heartbeat": {
+    "samples": 2,
+    "max_gap_seconds": 0.03848930000094697
+  }
+}
+
+         100375 function calls in 0.024 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.024    0.024 benchmark.py:47(<lambda>)
+        1    0.006    0.006    0.024    0.024 services.py:57(calculate)
+    10000    0.007    0.000    0.017    0.000 domain.py:97(nutrients)
+    50000    0.007    0.000    0.010    0.000 domain.py:100(<genexpr>)
+    40000    0.003    0.000    0.003    0.000 {built-in method builtins.getattr}
+      365    0.000    0.000    0.000    0.000 services.py:62(<lambda>)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        2    0.000    0.000    0.000    0.000 domain.py:37(day)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.sorted}
+        2    0.000    0.000    0.000    0.000 {method 'isoformat' of 'datetime.date' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method fromisoformat}
+
+

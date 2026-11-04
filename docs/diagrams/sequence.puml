@@ -1,0 +1,24 @@
+@startuml
+actor Пользователь
+participant FitnessApp
+participant EntryFactory
+participant FitnessService
+participant JsonRepository
+participant EventBus
+Пользователь -> FitnessApp : Добавить продукт
+FitnessApp -> EntryFactory : meal(поля формы)
+EntryFactory --> FitnessApp : MealEntry или ValidationError
+FitnessApp -> FitnessService : add_meal(entry)
+FitnessService -> JsonRepository : save(candidate)
+alt запись успешна
+  JsonRepository --> FitnessService : None
+  FitnessService -> FitnessService : state = candidate
+  FitnessService -> EventBus : emit()
+  EventBus -> FitnessApp : refresh()
+  FitnessApp --> Пользователь : Новая строка и КБЖУ
+else ошибка I/O
+  JsonRepository --> FitnessService : StorageError
+  FitnessService --> FitnessApp : StorageError
+  FitnessApp --> Пользователь : Сообщение об ошибке
+end
+@enduml

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module fitdiary.logging_setup</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title"><a href="fitdiary.html" class="white">fitdiary</a>.logging_setup</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5C%D0%BF%D0%BA%5Conedrive%5Cdesktop%5C%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD%20%D1%84%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%5Cfitdiary%5Clogging_setup.py">c:\users\пк\onedrive\desktop\константин федоров\fitdiary\logging_setup.py</a></td></tr></table>
+    <p><span class="code">Структурированный&nbsp;журнал&nbsp;JSON&nbsp;Lines&nbsp;с&nbsp;ротацией.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="json.html">json</a><br>
+</td><td class="multicolumn"><a href="logging.html">logging</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="logging.html#Formatter">logging.Formatter</a>(<a href="builtins.html#object">builtins.object</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="fitdiary.logging_setup.html#JsonFormatter">JsonFormatter</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="JsonFormatter">class <strong>JsonFormatter</strong></a>(<a href="logging.html#Formatter">logging.Formatter</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#JsonFormatter">JsonFormatter</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fmt=None,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;datefmt=None,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;style='%',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;validate=True,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;defaults=None<br>
+)<br>
+&nbsp;<br>
+Формат&nbsp;без&nbsp;содержимого&nbsp;дневника&nbsp;и&nbsp;параметров&nbsp;профиля.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="fitdiary.logging_setup.html#JsonFormatter">JsonFormatter</a></dd>
+<dd><a href="logging.html#Formatter">logging.Formatter</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="JsonFormatter-format"><strong>format</strong></a>(self, record)</dt><dd><span class="code">Format&nbsp;the&nbsp;specified&nbsp;record&nbsp;as&nbsp;text.<br>
+&nbsp;<br>
+The&nbsp;record's&nbsp;attribute&nbsp;dictionary&nbsp;is&nbsp;used&nbsp;as&nbsp;the&nbsp;operand&nbsp;to&nbsp;a<br>
+string&nbsp;formatting&nbsp;operation&nbsp;which&nbsp;yields&nbsp;the&nbsp;returned&nbsp;string.<br>
+Before&nbsp;formatting&nbsp;the&nbsp;dictionary,&nbsp;a&nbsp;couple&nbsp;of&nbsp;preparatory&nbsp;steps<br>
+are&nbsp;carried&nbsp;out.&nbsp;The&nbsp;message&nbsp;attribute&nbsp;of&nbsp;the&nbsp;record&nbsp;is&nbsp;computed<br>
+using&nbsp;LogRecord.getMessage().&nbsp;If&nbsp;the&nbsp;formatting&nbsp;string&nbsp;uses&nbsp;the<br>
+time&nbsp;(as&nbsp;determined&nbsp;by&nbsp;a&nbsp;call&nbsp;to&nbsp;<a href="#JsonFormatter-usesTime">usesTime</a>(),&nbsp;<a href="#JsonFormatter-formatTime">formatTime</a>()&nbsp;is<br>
+called&nbsp;to&nbsp;format&nbsp;the&nbsp;event&nbsp;time.&nbsp;If&nbsp;there&nbsp;is&nbsp;exception&nbsp;information,<br>
+it&nbsp;is&nbsp;formatted&nbsp;using&nbsp;<a href="#JsonFormatter-formatException">formatException</a>()&nbsp;and&nbsp;appended&nbsp;to&nbsp;the&nbsp;message.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="logging.html#Formatter">logging.Formatter</a>:<br>
+<dl><dt><a name="JsonFormatter-__init__"><strong>__init__</strong></a>(
+    self,
+    fmt=None,
+    datefmt=None,
+    style='%',
+    validate=True,
+    *,
+    defaults=None
+)</dt><dd><span class="code">Initialize&nbsp;the&nbsp;formatter&nbsp;with&nbsp;specified&nbsp;format&nbsp;strings.<br>
+&nbsp;<br>
+Initialize&nbsp;the&nbsp;formatter&nbsp;either&nbsp;with&nbsp;the&nbsp;specified&nbsp;format&nbsp;string,&nbsp;or&nbsp;a<br>
+default&nbsp;as&nbsp;described&nbsp;above.&nbsp;Allow&nbsp;for&nbsp;specialized&nbsp;date&nbsp;formatting&nbsp;with<br>
+the&nbsp;optional&nbsp;datefmt&nbsp;argument.&nbsp;If&nbsp;datefmt&nbsp;is&nbsp;omitted,&nbsp;you&nbsp;get&nbsp;an<br>
+ISO8601-like&nbsp;(or&nbsp;<a href="https://www.rfc-editor.org/rfc/rfc3339.txt">RFC&nbsp;3339</a>-like)&nbsp;format.<br>
+&nbsp;<br>
+Use&nbsp;a&nbsp;style&nbsp;parameter&nbsp;of&nbsp;'%',&nbsp;'{'&nbsp;or&nbsp;'$'&nbsp;to&nbsp;specify&nbsp;that&nbsp;you&nbsp;want&nbsp;to<br>
+use&nbsp;one&nbsp;of&nbsp;%-formatting,&nbsp;:meth:`str.format`&nbsp;(``{}``)&nbsp;formatting&nbsp;or<br>
+:class:`string.Template`&nbsp;formatting&nbsp;in&nbsp;your&nbsp;format&nbsp;string.<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;3.2<br>
+&nbsp;&nbsp;&nbsp;Added&nbsp;the&nbsp;``style``&nbsp;parameter.</span></dd></dl>
+
+<dl><dt><a name="JsonFormatter-formatException"><strong>formatException</strong></a>(self, ei)</dt><dd><span class="code">Format&nbsp;and&nbsp;return&nbsp;the&nbsp;specified&nbsp;exception&nbsp;information&nbsp;as&nbsp;a&nbsp;string.<br>
+&nbsp;<br>
+This&nbsp;default&nbsp;implementation&nbsp;just&nbsp;uses<br>
+traceback.print_exception()</span></dd></dl>
+
+<dl><dt><a name="JsonFormatter-formatMessage"><strong>formatMessage</strong></a>(self, record)</dt></dl>
+
+<dl><dt><a name="JsonFormatter-formatStack"><strong>formatStack</strong></a>(self, stack_info)</dt><dd><span class="code">This&nbsp;method&nbsp;is&nbsp;provided&nbsp;as&nbsp;an&nbsp;extension&nbsp;point&nbsp;for&nbsp;specialized<br>
+formatting&nbsp;of&nbsp;stack&nbsp;information.<br>
+&nbsp;<br>
+The&nbsp;input&nbsp;data&nbsp;is&nbsp;a&nbsp;string&nbsp;as&nbsp;returned&nbsp;from&nbsp;a&nbsp;call&nbsp;to<br>
+:func:`traceback.print_stack`,&nbsp;but&nbsp;with&nbsp;the&nbsp;last&nbsp;trailing&nbsp;newline<br>
+removed.<br>
+&nbsp;<br>
+The&nbsp;base&nbsp;implementation&nbsp;just&nbsp;returns&nbsp;the&nbsp;value&nbsp;passed&nbsp;in.</span></dd></dl>
+
+<dl><dt><a name="JsonFormatter-formatTime"><strong>formatTime</strong></a>(self, record, datefmt=None)</dt><dd><span class="code">Return&nbsp;the&nbsp;creation&nbsp;time&nbsp;of&nbsp;the&nbsp;specified&nbsp;LogRecord&nbsp;as&nbsp;formatted&nbsp;text.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;should&nbsp;be&nbsp;called&nbsp;from&nbsp;<a href="#JsonFormatter-format">format</a>()&nbsp;by&nbsp;a&nbsp;formatter&nbsp;which<br>
+wants&nbsp;to&nbsp;make&nbsp;use&nbsp;of&nbsp;a&nbsp;formatted&nbsp;time.&nbsp;This&nbsp;method&nbsp;can&nbsp;be&nbsp;overridden<br>
+in&nbsp;formatters&nbsp;to&nbsp;provide&nbsp;for&nbsp;any&nbsp;specific&nbsp;requirement,&nbsp;but&nbsp;the<br>
+basic&nbsp;behaviour&nbsp;is&nbsp;as&nbsp;follows:&nbsp;if&nbsp;datefmt&nbsp;(a&nbsp;string)&nbsp;is&nbsp;specified,<br>
+it&nbsp;is&nbsp;used&nbsp;with&nbsp;time.strftime()&nbsp;to&nbsp;format&nbsp;the&nbsp;creation&nbsp;time&nbsp;of&nbsp;the<br>
+record.&nbsp;Otherwise,&nbsp;an&nbsp;ISO8601-like&nbsp;(or&nbsp;<a href="https://www.rfc-editor.org/rfc/rfc3339.txt">RFC&nbsp;3339</a>-like)&nbsp;format&nbsp;is&nbsp;used.<br>
+The&nbsp;resulting&nbsp;string&nbsp;is&nbsp;returned.&nbsp;This&nbsp;function&nbsp;uses&nbsp;a&nbsp;user-configurable<br>
+function&nbsp;to&nbsp;convert&nbsp;the&nbsp;creation&nbsp;time&nbsp;to&nbsp;a&nbsp;tuple.&nbsp;By&nbsp;default,<br>
+time.localtime()&nbsp;is&nbsp;used;&nbsp;to&nbsp;change&nbsp;this&nbsp;for&nbsp;a&nbsp;particular&nbsp;formatter<br>
+instance,&nbsp;set&nbsp;the&nbsp;'converter'&nbsp;attribute&nbsp;to&nbsp;a&nbsp;function&nbsp;with&nbsp;the&nbsp;same<br>
+signature&nbsp;as&nbsp;time.localtime()&nbsp;or&nbsp;time.gmtime().&nbsp;To&nbsp;change&nbsp;it&nbsp;for&nbsp;all<br>
+formatters,&nbsp;for&nbsp;example&nbsp;if&nbsp;you&nbsp;want&nbsp;all&nbsp;logging&nbsp;times&nbsp;to&nbsp;be&nbsp;shown&nbsp;in&nbsp;GMT,<br>
+set&nbsp;the&nbsp;'converter'&nbsp;attribute&nbsp;in&nbsp;the&nbsp;<a href="logging.html#Formatter">Formatter</a>&nbsp;class.</span></dd></dl>
+
+<dl><dt><a name="JsonFormatter-usesTime"><strong>usesTime</strong></a>(self)</dt><dd><span class="code">Check&nbsp;if&nbsp;the&nbsp;format&nbsp;uses&nbsp;the&nbsp;creation&nbsp;time&nbsp;of&nbsp;the&nbsp;record.</span></dd></dl>
+
+<hr>
+Static methods inherited from <a href="logging.html#Formatter">logging.Formatter</a>:<br>
+<dl><dt><a name="JsonFormatter-converter"><strong>converter</strong></a> = localtime(...)</dt><dd><span class="code">localtime([seconds])&nbsp;-&gt;&nbsp;(tm_year,tm_mon,tm_mday,tm_hour,tm_min,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tm_sec,tm_wday,tm_yday,tm_isdst)<br>
+&nbsp;<br>
+Convert&nbsp;seconds&nbsp;since&nbsp;the&nbsp;Epoch&nbsp;to&nbsp;a&nbsp;time&nbsp;tuple&nbsp;expressing&nbsp;local&nbsp;time.<br>
+When&nbsp;'seconds'&nbsp;is&nbsp;not&nbsp;passed&nbsp;in,&nbsp;convert&nbsp;the&nbsp;current&nbsp;time&nbsp;instead.</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="logging.html#Formatter">logging.Formatter</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="logging.html#Formatter">logging.Formatter</a>:<br>
+<dl><dt><strong>default_msec_format</strong> = '%s,%03d'</dl>
+
+<dl><dt><strong>default_time_format</strong> = '%Y-%m-%d %H:%M:%S'</dl>
+
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-configure_logging"><strong>configure_logging</strong></a>(directory)</dt><dd><span class="code">Открыть&nbsp;журнал&nbsp;1&nbsp;МБ,&nbsp;две&nbsp;резервные&nbsp;копии.</span></dd></dl>
+</td></tr></table>
+</body></html>

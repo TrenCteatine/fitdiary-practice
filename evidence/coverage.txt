@@ -1,0 +1,11 @@
+Name                        Stmts   Miss  Cover   Missing
+---------------------------------------------------------
+fitdiary\__init__.py            1      0   100%
+fitdiary\__main__.py           33      1    97%   45
+fitdiary\domain.py             82      0   100%
+fitdiary\gui.py               212      0   100%
+fitdiary\logging_setup.py      19      0   100%
+fitdiary\services.py           80      0   100%
+fitdiary\storage.py            44      0   100%
+---------------------------------------------------------
+TOTAL                         471      1    99%
